@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+nav, footer, .titulo{
+    height: 70px;
+}
+
+.logo{
+    
+    background: #FF0000;
+}
+.menu{
+    
+    background: #00FF00;
+}
+.ingreso{
+    
+    background: #0000FF;
+}
+
+header, section{
+    height: 450px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    display: flex;
+}
+
+ .modulo {
+ background-color: #cce5ff;
+  margin-bottom: 10px;
+  height: 90px; /* Largo (alto) del módulo */
+  width: 210px;
+  display: flex;
+ 
+  font-weight: bold;
+}
+
+.principal {
+  background-color: #d4edda;
+  height: 400px; /* Largo (alto) de la ventana principal */
+  width: 1085px;
+  display: flex;
+ 
+  font-weight: bold;
+}

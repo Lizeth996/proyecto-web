@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.borde{
+    border: 1px solid gray;
+}
+
+.titulo{
+    height: 70px;
+    
+}
+
+.contenedor{
+    width: 95%;
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+nav{
+    height: 70px;
+    display: flex;
+    flex-flow: row nowrap;
+   
+}
+
+.logo{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    flex: 65%;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ingreso{
+   flex: 15%;
+   width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header, section{
+    height: 600px;
+   
+}
+
+.titulop{
+    text-align: center;
+}
+
+.portafolio{
+    display: flex;
+    flex-flow: row nowrap;
+    
+}
+
+.port-izq{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.port-cnt{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.port-der{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.tituloqs, .tituloc {
+    text-align: center;     
+}
+
+.quienessomos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las filas bajen */
+}
+
+.quienessomos > div {
+    flex: 33%; /* 3 columnas iguales */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+
+/* CONTACTENOS */
+.contactenos {
+    display: flex;
+    flex-wrap: wrap;
+    
+ 
+}
+
+.contacto-form, .contacto-info {
+    flex: 45%; /* 2 columnas */
+    padding: 10px;
+    
+}
+
+/* Formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos */
+    gap: 10px;
+   
+}
+
+.formulario input, 
+.formulario textarea {
+    max-width: 100%; /* Que no se pase en pantallas pequeñas */
+    padding: 1px;
+    border: 1px solid #ccc;
+}
+
+
+button {
+    padding: 10px;
+    background: black;
+    color: white;
+}
+
+/* Mapa */
+.mapa {
+    background-color: #eee;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+/* Iconos circulares */
+.iconos {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 10px;
+}
+ 
+
+.circulo {
+    width: 40px;
+    height: 40px;
+    background: #ccc;
+    border-radius: 50%;
+    
+}
+
+/* RESPONSIVE: en pantallas pequeñas columnas en bloque */
+@media (max-width: 768px) {
+    .quienessomos > div {
+        flex: 100%;
+    }
+
+    .contacto-form, .contacto-info {
+        flex: 100%;
+    }
+}
+
+
+.flex-container{
+        width: 200px;
+        display: flex;
+        border: 1px solid gray;
+        padding: 65px;
+}
+
+
+.mod1{
+    width: 200px;
+    display: flex;
+    border: 1px solid gray;
+    padding: 65px;
+
+}
+
+.mod2{
+    width: 200px;
+    display: flex;
+    border: 1px solid gray;
+    padding: 60px;
+
+}
+
+.mod3{
+    width: 200px;
+    display: flex;
+    border: 1px solid gray;
+    padding: 65px;
+
+}
+
+footer{
+    height: 70px;
+  }
