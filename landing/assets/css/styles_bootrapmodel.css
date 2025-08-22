@@ -32,23 +32,6 @@ header, section{
     border-radius: 50%;
     display: inline-block;
     display: flex;
+    
 }
-
- .modulo {
- background-color: #cce5ff;
-  margin-bottom: 10px;
-  height: 90px; /* Largo (alto) del módulo */
-  width: 210px;
-  display: flex;
  
-  font-weight: bold;
-}
-
-.principal {
-  background-color: #d4edda;
-  height: 400px; /* Largo (alto) de la ventana principal */
-  width: 1085px;
-  display: flex;
- 
-  font-weight: bold;
-}
