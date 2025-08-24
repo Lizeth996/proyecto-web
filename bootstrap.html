@@ -3,59 +3,219 @@
 <head>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresa</title>
+    <title>Eje Cafetero Bootstrap</title>
     <link rel="stylesheet" href="landing/assets/css/styles_bootrapmodel.css">
     <link rel="stylesheet" href="landing/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     
 </head>
 <body>
     <div class="container">
-        <nav class="text-center row">
-            <div class="border col-sm-12 col-md-12 col-lg-2 logo">Logo</div>
-            <div class="border col-sm-12 col-md-10 col-lg-8 menu">Menú</div>
-            <div class="border col-sm-12 col-md-2 col-lg-2 ingreso">Ingreso</div>
-        </nav>
+        
+        
+
+            <nav class="navbar navbar-expand-lg  bg-info">
+                <div class="container-fluid">
+                    <a class="navbar-brand">
+                        <i class="fa-brands fa-avianex"></i>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#descubre">Conocenos</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#lugares">Lugares para visitar</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link" href="#curiosidades" role="button" aria-expanded="false">
+                            Curiosidades
+                        </a>
+                        
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#Contactanos" role="button" arias-expanded="false">Contactanos</a>
+                        </li>
+                    </ul>
+                  
+                        
+                       <button id="btnIngreso" class="btn btn-outline-success" type="button">Ingreso</button>
+
+
+                                                            <!-- Modal Login -->
+                                    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                        <div class="modal-header bg-info text-white">
+                                            <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form id="loginForm">
+                                            <div class="mb-3">
+                                                <label for="usuario" class="form-label">Usuario</label>
+                                                <input type="text" class="form-control" id="usuario" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="password" class="form-label">Contraseña</label>
+                                                <input type="password" class="form-control" id="password" required>
+                                            </div>
+                                            <p id="error" class="text-danger" style="display:none;">Usuario o contraseña incorrectos</p>
+                                            <div class="d-grid">
+                                                <button type="submit" class="btn btn-primary">Ingresar</button>
+                                            </div>
+                                            </form>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+
+
+
+
+                    </div>
+                </div>
+            </nav>
+
+
+
+
+        <header class="border row">
+            <div class="col-12" id="descubre">Eje Cafetero
+
+
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="landing/assets/img/IMG-20210726-WA0012.jpg" class="img-fluid w-100" style="height:400px; object-fit:cover;">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="landing/assets/img/sale.jpg" class="img-fluid w-100" style="height:400px; object-fit:cover;">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="landing/assets/img/verd.jpg" class="img-fluid w-100" style="height:400px; object-fit:cover;">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+
+
 
         
 
-        <header class="border row">
-            <div class="col-12">Encabezado</div>
-        </header>
-
             <div class="border titulo row">
-                <div class="text-center col-12">Portafolio</div>
+                <div class="text-center col-12" id="lugares">Lugares para visitar</div>
             </div>
 
         <section class=" text-center row">
-            <div class="border col-sm-4">col1</div>
-            <div class="border col-sm-4">col2</div>
-            <div class="border col-sm-4">col3</div>
+            <div class="border col-sm-4">Aguas termales 1
+                <img src="landing/assets/img/2.jpg" class="img-fluid w-100" style="height:400px; object-fit:cover;">
+            </div>
+            <div class="border col-sm-4">Aguas termales 2
+                <img src="landing/assets/img/3.jpg" class="img-fluid w-100" style="height:400px; object-fit:cover;">
+            </div>
+            <div class="border col-sm-4">Aguas termales 3
+                <img src="landing/assets/img/4.jpg" class="img-fluid w-100" style="height:400px; object-fit:cover;">
+            </div>
         </section>
 
             <div class="border titulo row">
-                <div class="text-center mb-4">Quienes Somos</div>
+                <div class="text-center mb-4" id="curiosidades">Curiosidades</div>
             </div>
 
         <section class=" text-center row">
             
              <!-- Fila 1 -->
-            <div class="border col-md-4">Subtitulo1</div>
-            <div class="border col-md-4">Subtitulo2</div>
-            <div class="border col-md-4">Subtitulo3</div>
+            <div class="border col-md-4">Capital del café
+
+                <ul>
+                    <li>En el Eje Cafetero no solo se produce café: ¡se vive el café! 
+                    Los baristas locales dicen que el secreto está en la altura y el clima 
+                    templado que hace que cada grano tenga un sabor único.</li>  
+                </ul>
+
+            </div>
+
+            <div class="border col-md-4">Paisaje Patrimonio
+                <ul>
+                    <li>La UNESCO declaró este lugar Patrimonio en 2011. No es solo por el café, 
+                        sino por la mezcla de montañas verdes, casas coloridas y tradición campesina viva.</li>  
+                </ul>
+            </div>
+
+            <div class="border col-md-4">Cocora y las palmas
+                <ul>
+                    <li>En el Valle de Cocora crecen las palmas de cera, que alcanzan hasta 60 metros de altura. 
+                        Son tan altas que parecen competir con las montañas para tocar las nubes.</li>  
+                </ul>
+
+            </div>
 
             <!-- Fila 2 -->
-            <div class="border col-md-4">Subtitulo4</div>
-            <div class="border col-md-4">Subtitulo5</div>
-            <div class="border col-md-4">Subtitulo6</div>
+            <div class="border col-md-4">Clima único
+                <ul>
+                    <li>En pocas horas puedes pasar de tomar café bajo el sol a caminar en el Parque Nacional 
+                        de los Nevados, donde hay picos cubiertos de nieve como el Nevado del Ruiz.</li>  
+                </ul>
+            </div>
+
+            <div class="border col-md-4">Parques temáticos
+                <ul>
+                    <li>El Parque del Café tiene montañas rusas, shows culturales y 
+                        hasta recorridos entre cafetales para aprender cómo llega tu espresso a la taza.</li>  
+                </ul>
+            </div>
+
+            <div class="border col-md-4">Diversidad natural
+                <ul>
+                    <li>Los pueblos como Salento, Filandia y Pijao parecen sacados de una postal: 
+                        casas de colores brillantes, balcones llenos de flores 
+                        y cafeterías que huelen a cielo.</li>  
+                </ul>
+            </div>
 
             <!-- Fila 3 -->
-            <div class="border col-md-4">Subtitulo7</div>
-            <div class="border col-md-4">Subtitulo8</div>
-            <div class="border col-md-4">Subtitulo9</div>
+            <div class="border col-md-4">Cultura cafetera viva
+                <ul>
+                    <li>Si amas la aventura, hay parapente y rafting; si prefieres tranquilidad, 
+                        puedes quedarte en una finca cafetera colonial y aprender a tostar tu propio café.</li>  
+                </ul>
+            </div>
+            <div class="border col-md-4">La tierra del mejor aroma
+                 <ul>
+                    <li>En el Eje Cafetero, hasta el aire huele a café recién tostado. 
+                        Pasear por sus calles es como caminar dentro de una cafetería gigante: 
+                        los aromas cambian con cada esquina.</li>  
+                </ul>
+            </div>
+
+            <div class="border col-md-4">Puentes colgantes y cafetales infinitos
+                <ul>
+                    <li>Además de montañas, encontrarás senderos llenos de puentes colgantes y
+                         vistas que parecen no terminar nunca. ¡Es el lugar perfecto para perderse 
+                         sin perderse!</li>  
+                </ul>
+            </div>
+
         </section>
 
             <div class="border titulo row">
-                <div class="text-center mb-4">Contactenos</div>
+                <div class="text-center mb-4" id="Contactanos">Contactenos</div>
             </div>
         
          
@@ -66,116 +226,65 @@
         <div class="row border">
             <!-- Columna izquierda -->
             <div class="col-md-6 p-4 border-end">
-                <h5 class="mb-3">Contácta con nosotros</h5>
-
-                <form>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Nombre">
-                        </div>
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Apellido">
-                        </div>
-                    </div>
-
-
-                    <div class="mb-3">
-                        <input type="email" class="form-control" placeholder="Correo">
-                    </div>
-
-                    <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Asunto">
-                    </div>
-
-                    <div class="mb-3">
-                        <textarea class="form-control" rows="4" placeholder="Mensaje"></textarea>
-                    </div>
-
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </div>
-                </form>
+                <h5 class="mb-3">Nos puedes buscar en las siguientes redes sociales</h5>
+                <div class="social-icons">
+                    <a href="landing/assets/img/facebook.png" target="_blank" onclick="return false;"><i class="fab fa-facebook"></i></a>
+                    <a href="landing/assets/img/instagram.png" target="_blank" onclick="return false;"><i class="fab fa-instagram"></i></a>
+                    <a href="landing/assets/img/tik-tok.png" target="_blank" onclick="return false;"><i class="fab fa-tiktok"></i></a>
+                    <a href="landing/assets/img/whatsapp.png" target="_blank" onclick="return false;"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                
             </div>
 
             <!-- Columna derecha -->
             <div class="col-md-6 p-4">
                 <!-- Mapa -->
-                <div class="mb-3" style="height: 200px; background-color: #ddd;">
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22280.85465929117!2d-75.6324308988762!3d4.873682172614065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3881809c7f5a9f%3A0x2849061d9ddbf2b6!2sSanta%20Rosa%20de%20Cabal%2C%20Risaralda!5e0!3m2!1ses!2sco!4v1756011115170!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <!-- Aquí puedes insertar un iframe de Google Maps -->
                 </div>
 
             
-
-                <!-- Círculos -->
-                <div class="d-flex justify-content-center mb-3">
-                    <span class="circle mx-1"></span>
-                    <span class="circle mx-1"></span>
-                    <span class="circle mx-1"></span>
-                    <span class="circle mx-1"></span>
-                    <span class="circle mx-1"></span>
-                </div>
-
-                <a href="#" class="float-end">Volver</a>
+ 
             </div>
         </div>
 
  
                 <div class="border titulo row">
-                    <div class="text-center mb-4">Final de la pagina</div>
+                    <div class="text-center mb-4">Muchas gracias por visitarnos</div>
                 </div>
 
-
-
-
-
-            <nav class="text-center row">
-                <div class="border col-sm-12 col-md-12 col-lg-2 logo">Logo</div>
-                <div class="border col-sm-12 col-md-10 col-lg-8 menu">Menú</div>
-                <div class="border col-sm-12 col-md-2 col-lg-2 ingreso">Administrador</div>
-            </nav>
-       
-         
-
-
-            
-                <div class="row border">
-                        <!-- Columna izquierda -->
-                        <div class="col-2 border d-flex flex-column p-0">
-                            <div class="border d-flex justify-content-center align-items-center" style="height: 100px;">
-                                Perfil
-                            </div>
-                            <div class="border d-flex justify-content-center align-items-center" style="height: 100px;">
-                                Módulo 1
-                            </div>
-                            <div class="border d-flex justify-content-center align-items-center" style="height: 100px;">
-                                Módulo 2
-                            </div>
-                            <div class="border d-flex justify-content-center align-items-center" style="height: 100px;">
-                                Módulo 3
-                            </div>
-                        </div>
-
-                        <!-- Columna derecha -->
-                        <div class="col-10 border">
-                             Principal
-                        </div>
-                </div>
-
-            
-        
-
-               
-                <div class="border titulo row">
-                    <div class="text-center mb-4">Quienes Somos</div>
-                </div>
-
-                
-
-
-                <section class="border contacto row"></section>
                 
     </div>
 
-    <script src="landing/assets/js/bootstrap.bundle.min.js"></script>    
+    <script src="landing/assets/js/bootstrap.bundle.min.js"></script> 
+    
+    
+    <script>
+        const btnIngreso = document.getElementById("btnIngreso");
+        const loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
+        const loginForm = document.getElementById("loginForm");
+        const errorText = document.getElementById("error");
+       // Abrir modal al hacer clic
+        btnIngreso.addEventListener("click", () => {
+        loginModal.show();
+        });
+        // Validar login
+        loginForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+        const usuarioCorrecto = "admin";
+        const passwordCorrecto = "1234";
+        const usuario = document.getElementById("usuario").value;
+        const password = document.getElementById("password").value;
+        if(usuario === usuarioCorrecto && password === passwordCorrecto){
+        errorText.style.display = "none";
+        loginModal.hide();
+        window.open("admin.html", "_blank"); // abre otra ventana
+        } else {
+        errorText.style.display = "block";
+        }
+        });
+    </script>
+    
 </body>
 </html>         

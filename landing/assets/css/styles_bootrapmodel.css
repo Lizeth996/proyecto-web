@@ -5,33 +5,39 @@
 }
 
 nav, footer, .titulo{
-    height: 70px;
+    height: 80px;
+    
 }
 
-.logo{
-    
-    background: #FF0000;
-}
-.menu{
-    
-    background: #00FF00;
-}
-.ingreso{
-    
-    background: #0000FF;
-}
 
 header, section{
     height: 450px;
 }
+ 
+ 
+.social-icons a {
+    color: #000; /* color de los íconos */
+    font-size: 60px; /* tamaño */
+    margin-right: 90px; /* espacio entre íconos */
+    transition: color 0.3s;
+}
 
-.circle {
-    width: 30px;
-    height: 30px;
-    background-color: #ddd;
-    border-radius: 50%;
-    display: inline-block;
-    display: flex;
-    
+.social-icons a:hover {
+    color: #007bff; /* color al pasar el mouse */
+}
+
+
+.titulo {
+    font-family: 'Pacifico', cursive;
+    font-size: 40px; /* Ajusta el tamaño a tu gusto */
 }
  
+.social-icons {
+  text-align: center; /* centra los íconos horizontalmente */
+  margin-top: 100px;
+}
+
+.social-icons i {
+  font-size: 120%;
+  margin: 10px; /* espacio entre íconos */
+  }

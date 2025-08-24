@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eje Cafetero Bootstrap</title>
+    <link rel="stylesheet" href="landing/assets/css/styles_bootrapmodel.css">
+    <link rel="stylesheet" href="landing/assets/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+       
+</head>
+<body><br>
+    
+    <h3>Bienvenido señor usuario</h3>
+    
+
+    <button id="cerrarSesionBtn" class="btn btn-danger">Cerrar Sesión</button>
+
+    <div class="container">
+            <nav class="text-center row">
+                <div class="border col-sm-12 col-md-12 col-lg-2 logo">Logo
+                   <i class="fa-solid fa-inbox"></i>
+                </div>
+                <div class="border col-sm-12 col-md-10 col-lg-8 menu">Menú</div>
+                <div class="border col-sm-12 col-md-2 col-lg-2 ingreso">Administrador</div>
+            </nav>
+       
+         
+ 
+
+            
+                <div class="row border">
+                        <!-- Columna izquierda -->
+                        <div class="col-2 border d-flex flex-column p-0">
+                            <div class="border d-flex justify-content-center align-items-center" style="height: 100px;">
+                                 <i class="fa-regular fa-circle-user"></i>
+                                 
+                                <ul>
+                                    <li>Nombre Completo</li> 
+                                    <li>Perfil</li> 
+                                    <li>Configuracion</li>  
+                                </ul>
+
+                            </div>
+                            <div class="border d-flex justify-content-center align-items-center" style="height: 200px;">
+                                Módulo 1
+                                <ul>
+                                    <li>Registrar Usuario</li> 
+                                    <li>Crear Usuario</li> 
+                                    <li>Consultar Usuario</li> 
+                                    <li>Ver Reportes Usuario</li>  
+                                </ul>
+                            </div>
+                            <div class="border d-flex justify-content-center align-items-center" style="height: 100px;">
+                                 Módulo 2
+                                <ul>
+                                    <li>Caso Uso 4</li> 
+                                    <li>Caso Uso 5</li> 
+                                    <li>Caso Uso 6</li>  
+                                </ul>
+                            </div>
+                            <div class="border d-flex justify-content-center align-items-center" style="height: 100px;">
+                                Módulo 3
+                                <ul>
+                                    <li>Caso Uso 7</li> 
+                                    <li>Caso Uso 8</li>  
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Columna derecha -->
+                        <div class="col-10 border">
+                             Principal
+                             <ul><br><br><br><br><br><br><br>
+                                    <li>Esta parte inicia con la pantalla Principal, se sugiere colocar las
+                                        tareas basicas del usuario(Perfil). Además a través de este espacio
+                                        se cargarán los formularios, tablas, reportes gráficos y demás opciones
+                                        que considere en su Sistema de Información.</li> 
+                                </ul>
+                        </div>
+                </div>
+
+            
+ 
+                
+
+ 
+    </div>             
+  
+
+    <script src="landing/assets/js/bootstrap.bundle.min.js"></script> 
+    
+    <script>
+        const cerrarSesionBtn = document.getElementById("cerrarSesionBtn");
+
+        cerrarSesionBtn.addEventListener("click", () => {
+            // Opción 1: cerrar la ventana
+            window.close();
+
+            // Opción 2: redirigir a la página principal
+            // window.location.href = "index.html";
+        });
+    </script>
+     
+    
+</body>
+</html>         
